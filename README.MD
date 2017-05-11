@@ -1,5 +1,4 @@
-# WebGoat: A deliberately insecure Web Application
-Run the following commands to run webgoat in a docker container.
+# Run Webgoat(Developer Edition) on Docker
 To begin with, get the repository.
 ```Shell
 git clone --recursive git@github.com:prasantadh/docker-webgoat.git
