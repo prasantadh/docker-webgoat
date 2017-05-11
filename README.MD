@@ -1,9 +1,18 @@
 # WebGoat: A deliberately insecure Web Application
 Run the following commands to run webgoat in a docker container.
+To begin with, get the repository.
 ```Shell
-git clone git@github.com:prasantadh/docker-webgoat.git
-git submodule update --recursive --remote
+git clone --recursive git@github.com:prasantadh/docker-webgoat.git
+```
+
+To run webgoat on a container:
+```Shell
 docker-compose up -d
 docker-compose exec webgoat mvn clean install
 docker-compose exec webgoat mvn -pl webgoat-server spring-boot:run
+```
+
+Periodically, webgoat repository gets updated. Use the following to get the updates
+```Shell
+git submodule update --recursive --remote
 ```
